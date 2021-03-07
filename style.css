@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tabla {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.table-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    user-select: none;
+}
+
+.polje-belo {
+    height: 70px;
+    width: 70px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.polje-sivo {
+    height: 70px;
+    width: 70px;
+    background-color: grey;
+    border: 1px solid black;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.figura {
+    width: 70px;
+    height: 70px;
+    -webkit-user-drag: none;
+}
+
+.brojevi .broj {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.slova {
+    display: flex;
+    justify-content: center;
+}
+
+.slova .slovo {
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.slova .placeholder {
+    width: 30px;
+}
+
+.status {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+    margin-top: -43px;
+}
+
+.status-text {
+    padding: 20px;
+    border: 2px solid black;
+}
+
+.black-move {
+    background: black;
+    color: white;
+}

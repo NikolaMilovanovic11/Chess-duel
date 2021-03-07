@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Šah duel</title>
+</head>
+
+<body>
+    <div class="table-container">
+        <div class="row">
+            <div class="column">
+                <div class="row">
+                    <div class="brojevi">
+                        <div class="broj">
+                            8
+                        </div>
+                        <div class="broj">
+                            7
+                        </div>
+                        <div class="broj">
+                            6
+                        </div>
+                        <div class="broj">
+                            5
+                        </div>
+                        <div class="broj">
+                            4
+                        </div>
+                        <div class="broj">
+                            3
+                        </div>
+                        <div class="broj">
+                            2
+                        </div>
+                        <div class="broj">
+                            1
+                        </div>
+                    </div>
+                    <div class="tabla">
+                        <div class="row">
+                            <div id="field-91" class="polje-belo" onclick="board.fieldClicked(91)"></div>
+                            <div id="field-92" class="polje-sivo" onclick="board.fieldClicked(92)"></div>
+                            <div id="field-93" class="polje-belo" onclick="board.fieldClicked(93)"></div>
+                            <div id="field-94" class="polje-sivo" onclick="board.fieldClicked(94)"></div>
+                            <div id="field-95" class="polje-belo" onclick="board.fieldClicked(95)"></div>
+                            <div id="field-96" class="polje-sivo" onclick="board.fieldClicked(96)"></div>
+                            <div id="field-97" class="polje-belo" onclick="board.fieldClicked(97)"></div>
+                            <div id="field-98" class="polje-sivo" onclick="board.fieldClicked(98)"></div>
+                        </div>
+                        <div class="row">
+                            <div id="field-81" class="polje-sivo" onclick="board.fieldClicked(81)"></div>
+                            <div id="field-82" class="polje-belo" onclick="board.fieldClicked(82)"></div>
+                            <div id="field-83" class="polje-sivo" onclick="board.fieldClicked(83)"></div>
+                            <div id="field-84" class="polje-belo" onclick="board.fieldClicked(84)"></div>
+                            <div id="field-85" class="polje-sivo" onclick="board.fieldClicked(85)"></div>
+                            <div id="field-86" class="polje-belo" onclick="board.fieldClicked(86)"></div>
+                            <div id="field-87" class="polje-sivo" onclick="board.fieldClicked(87)"></div>
+                            <div id="field-88" class="polje-belo" onclick="board.fieldClicked(88)"></div>
+                        </div>
+                        <div class="row">
+                            <div id="field-71" class="polje-belo" onclick="board.fieldClicked(71)"></div>
+                            <div id="field-72" class="polje-sivo" onclick="board.fieldClicked(72)"></div>
+                            <div id="field-73" class="polje-belo" onclick="board.fieldClicked(73)"></div>
+                            <div id="field-74" class="polje-sivo" onclick="board.fieldClicked(74)"></div>
+                            <div id="field-75" class="polje-belo" onclick="board.fieldClicked(75)"></div>
+                            <div id="field-76" class="polje-sivo" onclick="board.fieldClicked(76)"></div>
+                            <div id="field-77" class="polje-belo" onclick="board.fieldClicked(77)"></div>
+                            <div id="field-78" class="polje-sivo" onclick="board.fieldClicked(78)"></div>
+                        </div>
+                        <div class="row">
+                            <div id="field-61" class="polje-sivo" onclick="board.fieldClicked(61)"></div>
+                            <div id="field-62" class="polje-belo" onclick="board.fieldClicked(62)"></div>
+                            <div id="field-63" class="polje-sivo" onclick="board.fieldClicked(63)"></div>
+                            <div id="field-64" class="polje-belo" onclick="board.fieldClicked(64)"></div>
+                            <div id="field-65" class="polje-sivo" onclick="board.fieldClicked(65)"></div>
+                            <div id="field-66" class="polje-belo" onclick="board.fieldClicked(66)"></div>
+                            <div id="field-67" class="polje-sivo" onclick="board.fieldClicked(67)"></div>
+                            <div id="field-68" class="polje-belo" onclick="board.fieldClicked(68)"></div>
+                        </div>
+                        <div class="row">
+                            <div id="field-51" class="polje-belo" onclick="board.fieldClicked(51)"></div>
+                            <div id="field-52" class="polje-sivo" onclick="board.fieldClicked(52)"></div>
+                            <div id="field-53" class="polje-belo" onclick="board.fieldClicked(53)"></div>
+                            <div id="field-54" class="polje-sivo" onclick="board.fieldClicked(54)"></div>
+                            <div id="field-55" class="polje-belo" onclick="board.fieldClicked(55)"></div>
+                            <div id="field-56" class="polje-sivo" onclick="board.fieldClicked(56)"></div>
+                            <div id="field-57" class="polje-belo" onclick="board.fieldClicked(57)"></div>
+                            <div id="field-58" class="polje-sivo" onclick="board.fieldClicked(58)"></div>
+                        </div>
+                        <div class="row">
+                            <div id="field-41" class="polje-sivo" onclick="board.fieldClicked(41)"></div>
+                            <div id="field-42" class="polje-belo" onclick="board.fieldClicked(42)"></div>
+                            <div id="field-43" class="polje-sivo" onclick="board.fieldClicked(43)"></div>
+                            <div id="field-44" class="polje-belo" onclick="board.fieldClicked(44)"></div>
+                            <div id="field-45" class="polje-sivo" onclick="board.fieldClicked(45)"></div>
+                            <div id="field-46" class="polje-belo" onclick="board.fieldClicked(46)"></div>
+                            <div id="field-47" class="polje-sivo" onclick="board.fieldClicked(47)"></div>
+                            <div id="field-48" class="polje-belo" onclick="board.fieldClicked(48)"></div>
+                        </div>
+                        <div class="row">
+                            <div id="field-31" class="polje-belo" onclick="board.fieldClicked(31)"></div>
+                            <div id="field-32" class="polje-sivo" onclick="board.fieldClicked(32)"></div>
+                            <div id="field-33" class="polje-belo" onclick="board.fieldClicked(33)"></div>
+                            <div id="field-34" class="polje-sivo" onclick="board.fieldClicked(34)"></div>
+                            <div id="field-35" class="polje-belo" onclick="board.fieldClicked(35)"></div>
+                            <div id="field-36" class="polje-sivo" onclick="board.fieldClicked(36)"></div>
+                            <div id="field-37" class="polje-belo" onclick="board.fieldClicked(37)"></div>
+                            <div id="field-38" class="polje-sivo" onclick="board.fieldClicked(38)"></div>
+                        </div>
+                        <div class="row">
+                            <div id="field-21" class="polje-sivo" onclick="board.fieldClicked(21)"></div>
+                            <div id="field-22" class="polje-belo" onclick="board.fieldClicked(22)"></div>
+                            <div id="field-23" class="polje-sivo" onclick="board.fieldClicked(23)"></div>
+                            <div id="field-24" class="polje-belo" onclick="board.fieldClicked(24)"></div>
+                            <div id="field-25" class="polje-sivo" onclick="board.fieldClicked(25)"></div>
+                            <div id="field-26" class="polje-belo" onclick="board.fieldClicked(26)"></div>
+                            <div id="field-27" class="polje-sivo" onclick="board.fieldClicked(27)"></div>
+                            <div id="field-28" class="polje-belo" onclick="board.fieldClicked(28)"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slova">
+                    <div class="placeholder">
+                    </div>
+                    <div class="slovo">
+                        a
+                    </div>
+                    <div class="slovo">
+                        b
+                    </div>
+                    <div class="slovo">
+                        c
+                    </div>
+                    <div class="slovo">
+                        d
+                    </div>
+                    <div class="slovo">
+                        e
+                    </div>
+                    <div class="slovo">
+                        f
+                    </div>
+                    <div class="slovo">
+                        g
+                    </div>
+                    <div class="slovo">
+                        h
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div id="status" class="status">
+                    <span id="status-text" class="status-text">Beli na potezu</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./scripts/definisanje.js"></script>
+</body>
+
+</html>
